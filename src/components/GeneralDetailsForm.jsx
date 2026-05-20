@@ -10,16 +10,11 @@ import {
   Building2,
 } from 'lucide-react';
 import { EXAM_OPTIONS } from '../config/questionData';
-
-const CLASS_OPTIONS = [
-  'Dadar Classroom',
-  'Andheri Classroom',
-  'Online Classes',
-  'Recordings Only',
-];
+import CLASS_OPTIONS  from '../config/class_option'
 
 export default function GeneralDetailsForm() {
   const navigate = useNavigate();
+  
 
   const [details, setDetails] = useLocalStorage('generalDetails', {
     fullName: '',
