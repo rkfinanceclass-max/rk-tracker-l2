@@ -18,7 +18,7 @@ export const exportData = () => {
   
   const a = document.createElement("a");
   a.href = url;
-  a.download = `student-progress-${new Date().toISOString().split("T")[0]}.json`;
+  a.download = `L2-student-progress-${new Date().toISOString().split("T")[0]}.json`;
   a.click();
   URL.revokeObjectURL(url);
 };
