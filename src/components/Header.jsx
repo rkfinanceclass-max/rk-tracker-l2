@@ -8,6 +8,8 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
   const fileInputRef = useRef(null);
 
+  const logo_url = 'https://res.cloudinary.com/dzl0crskt/image/upload/v1779268139/RK-Finance-Classes-Logo-ed-1_wa28ms.png'
+
   const handleImport = (e) => {
     const file = e.target.files?.[0];
     if (file) {
@@ -24,7 +26,7 @@ export default function Header() {
         <Link to="/dashboard" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="flex items-center gap-2 cursor-pointer">
             <div style={{  padding: '0.5rem', borderRadius: '8px', color: 'white' }}>
-             <img src="https://rkfinanceclass.com/wp-content/uploads/2023/06/RK-Finance-Classes-Logo-ed-1.png" alt="RKClasses" style={{ width: '100%', height: 'auto' }} />
+             <img src={logo_url} alt="RKClasses" style={{ width: '100%', height: 'auto' }} />
             </div>
            
           </div>
