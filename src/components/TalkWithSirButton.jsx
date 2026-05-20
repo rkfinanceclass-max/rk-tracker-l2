@@ -681,7 +681,7 @@ function buildReportHTML() {
         margin:0 0 6px 0;
         color:${nameColor};
       ">
-        ${details.fullName} Progress Tracker
+        ${details.fullName} L2 Progress Tracker
       </h1>
 
      
@@ -705,7 +705,7 @@ function buildReportHTML() {
           font-weight:700;
           color:${txt2};
         ">
-        L1 ${details.exam} exam
+        L2 ${details.exam} exam
         </p>
       ` : ''}
 
